@@ -91,6 +91,7 @@
               Add a new project.
             </h5>
             <form>
+              <!-- Project Name Field -->
               <div class="form-group">
                 <label for="projectName">Project Name</label>
                 <input
@@ -98,29 +99,40 @@
                   class="form-control"
                   id="projectName"
                   aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  placeholder="Enter project name."
                 />
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
+              <!-- Job Type Field -->
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
+                <label for="jobTypeSelect">Job Type</label>
+                <select class="form-control" id="jobTypeSelect">
+                  <option>  </option>
+                  <option>Website Creation</option>
+                  <option>Backend Maintenance</option>
+                  <option>Search Engine Optimization</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
-                >
+              <!-- Hourly Rate Field -->
+              <label for="input-group">Hourly Rate</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
               </div>
+              <!-- Calendar Date Picker -->
+              <div class="form-group"> <!-- Date input -->
+                <label class="control-label" for="date">Date</label>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+              </div>
+                
+                      </div>
+                   </div>
+        
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             <button
